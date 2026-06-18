@@ -3,6 +3,11 @@ import React, { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
+    // Force scroll to top on load if there's no hash (prevents browser scroll-restoration behavior)
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    }
+
     // 0. Init Background Paths
     initBackgroundPaths();
 
