@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Instagram, Facebook, Tiktok } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -60,7 +60,17 @@ export default function Footer() {
             className="w-8 h-8 rounded-full border border-white/5 bg-luxury-dark hover:border-gold/40 flex items-center justify-center text-luxury-text hover:text-gold transition-all duration-300"
             aria-label="TikTok"
           >
-            <Tiktok className="w-4 h-4" />
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-4 h-4"
+            >
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+            </svg>
           </a>
         </div>
 
