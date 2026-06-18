@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
-import CookieConsent from "@/components/cookie-consent";
 
 const outfit = Outfit({
   subsets: ["latin", "latin-ext"],
@@ -36,7 +35,6 @@ export default function RootLayout({
     <html lang="ro" className={`${outfit.variable} ${cormorantGaramond.variable}`}>
       <body className="bg-background text-foreground antialiased min-h-screen">
         {children}
-        <CookieConsent />
       </body>
     </html>
   );
