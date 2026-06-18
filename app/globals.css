@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #060708;
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(197, 168, 128, 0.05) 0%, transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(197, 168, 128, 0.05) 0%, transparent 45%),
+      radial-gradient(circle at 50% 50%, #0a0b0d 0%, #060708 100%);
+    background-attachment: fixed;
+  }
+  body {
+    @apply bg-transparent text-foreground antialiased selection:bg-gold/30 selection:text-white overflow-x-hidden;
+    font-family: var(--font-sans), system-ui, sans-serif;
+  }
+}
+
+/* Custom Scrollbar for Luxury Dark Theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050506;
+}
+::-webkit-scrollbar-thumb {
+  background: #17191C;
+  border: 2px solid #050506;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Smooth scrolling configuration */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Utilities for Lux Experience */
+.glassmorphism {
+  background: #0D0E10;
+  border: 1px solid rgba(197, 168, 128, 0.1);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF9EB 0%, #D4AF37 50%, #AA820A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-glow-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.gold-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+@keyframes flow-border {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+.animate-flow-border-slow {
+  animation: flow-border 6s linear infinite;
+}
