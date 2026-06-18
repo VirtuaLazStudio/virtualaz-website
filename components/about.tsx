@@ -126,8 +126,8 @@ export default function About() {
           <div className="absolute inset-0 bg-gradient-to-t from-luxury-black via-transparent to-transparent z-10 opacity-60 pointer-events-none" />
           
           <Image
-            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
-            alt="Interior Penthouse Scanat 360"
+            src="/portfolio_villa.png"
+            alt="Scanare camera intr-o vila moderna"
             fill
             className="object-cover transform hover:scale-105 transition-transform duration-[2000ms] ease-out"
           />

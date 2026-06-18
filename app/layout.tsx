@@ -4,14 +4,14 @@ import "./globals.css";
 import CookieConsent from "@/components/cookie-consent";
 
 const outfit = Outfit({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-sans",
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
 const cormorantGaramond = Cormorant_Garamond({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-serif",
   weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
